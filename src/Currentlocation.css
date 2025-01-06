@@ -1,0 +1,156 @@
+.container{
+    display: flex;
+    position: relative;
+    font-size: 20px;
+    background:url('https://images.pexels.com/photos/164175/pexels-photo-164175.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    height: 706px;
+    justify-content: center;
+    align-items: center;
+}
+.left-container{
+    text-align: left;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    justify-content: space-between;
+}
+/* .box{
+    flex: 1 1 calc(50%-10%);
+} */
+.right-container{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(3 6 45 / 70%);
+    width: 50%;
+    height: 100%;
+}
+.right-bottom{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    border-radius: 6px;
+    margin: 4rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.weekcontainer{
+    padding: 10px;
+    font-size: 16px;
+    list-style: none;
+    border: 1px solid;
+    border-radius: 10px;
+    background-color:rgb(121 123 162 / 33%);
+}
+.description{
+    text-transform: capitalize;
+    width: 5rem;
+    font-size: 10px;
+    font-family: system-ui;
+}
+.left-top{
+    margin: 3rem;
+}
+.left-bottom{
+    display: flex;
+    gap: 55%;
+    margin: 3rem
+} 
+.temp{
+    font-size: 6rem;
+}
+.invert-logo{
+    filter: invert(1) brightness(1);
+}
+.location{
+    display: flex;
+}
+.day{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.images{
+    width: 70px;
+    height: 70px;
+}
+.currentDayLogo{
+    margin: 1rem;
+}
+.loader{
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+.loader-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+    
+} 
+ @media screen and (max-width: 1060px) {
+    .weekcontainer{
+        padding: 5px;
+    }
+    .images{
+        width: 40px;
+        height: 40px;
+    }
+    .temp{
+        font-size: 3rem;
+    }
+    .right-bottom{
+        margin: 78px 29px;
+    }
+    
+  }
+
+@media screen and (max-width: 600px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        height: 1080px;
+    }
+    .right-container{
+        width: 100%;
+        background-color: none;
+    }
+    .left-container{
+        width: 100%;
+    }
+    .left-bottom{
+        display: flex;
+        gap: 45%;
+        margin: 2rem
+    }
+    .left-top{
+        margin: 2rem;
+    }
+    .currentDayLogo{
+        margin: none;
+    }
+    .right-bottom{
+        margin: 45px 50px;
+    }
+    .loader{
+        top: 20%;
+        left: 43%;
+    }   
+    .loader-img{
+        left: 25%;
+        top: 20%;
+    } 
+}
