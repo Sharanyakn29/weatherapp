@@ -222,9 +222,9 @@ const dayBuilder = (d) =>{
               <img src={weatherLogoFind(this.state.main)} alt='weatherLogo' style={{width:'75px',height:'75px'}} className='invert-logo'></img>
               <div >{this.state.main}</div>  
             </div>
-            <div className='temp'>{this.state.temperatureC}°C</div>
-      
+            <div className='temp'>{this.state.temperatureC}°C</div>      
         </div>
+
           </div>          
         <div className='right-container'>
           <SearchCity></SearchCity>

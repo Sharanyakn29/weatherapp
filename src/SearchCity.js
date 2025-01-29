@@ -59,35 +59,38 @@ function SearchCity() {
         </div>
 
       <div className='weatherDetails'>
-      
-        <div className='titles'>
-        <div className='title'> City name </div>
-          <hr></hr>
-          <div className='title'>Temperature</div>
-          <hr></hr>
-          <div className='title'>Humidity</div>
-          <hr></hr>
-          <div className='title'>Visibility</div>
-          <hr></hr>
-          <div className='title'>Wind Speed</div>
-          <hr></hr> 
-          <div className='title'>Sea Level</div>
+        <div className='title-container'>
+          <div> City name </div>
+          <div>  {cityName}</div>
+          </div>
+        <hr></hr> 
+        <div className='title-container'>
+          <div>Temperature</div>
+          <div> {temperatureC} °C</div>
+        </div>  
+        <hr></hr> 
+        <div className='title-container'>
+          <div>Humidity</div>
+          <div> {humidity} %</div>
+        </div> 
+        <hr></hr> 
+        <div className='title-container'>
+          <div >Visibility</div>
+          <div> {visibility} Km</div>
         </div>
-         <div className='values'>
-          <div className='value'>  {cityName}</div>
-         <hr></hr>
-          <div className='value'> {temperatureC} °C</div>
-          <hr></hr>
-          <div className='value'> {humidity} %</div>
-          <hr></hr>
-          <div className='value'> {visibility} Km</div>
-          <hr></hr>
-          <div className='value'> {windSpeed} m/s</div>
-          <hr></hr>
-          <div className='value'>{seaLevel} hPa</div>
+        <hr></hr> 
+        <div className='title-container'>
+          <div>Wind Speed</div>
+          <div> {windSpeed} m/s</div>
         </div>
-          
-        </div>     
+        <hr></hr> 
+        <div className='title-container'>
+          <div>Sea Level</div>
+          <div>{seaLevel} hPa</div>
+        </div>
+
+      </div>  
+        
     </div>
   )
 }
