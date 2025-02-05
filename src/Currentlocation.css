@@ -2,8 +2,11 @@
     display: flex;
     position: relative;
     font-size: 20px;
-    background:url('https://images.pexels.com/photos/164175/pexels-photo-164175.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    /* background:url('https://images.pexels.com/photos/164175/pexels-photo-164175.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); */
     background-size: cover;
+    width: 60%;
+    height: 75%;
+    margin: auto;
 }
 .left-container{
     text-align: left;
@@ -12,6 +15,7 @@
     flex-direction: column;
     width: 50%;
     justify-content: space-between;
+    background: #000000c2;
 }
 .right-container{
     display: flex;
@@ -25,23 +29,24 @@
     flex-direction: row;
     color: white;
     border-radius: 6px;
-    margin: 4rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
     flex-wrap: wrap;
     justify-content: center;
 }
 .weekcontainer{
-    padding: 9px;
+    padding: 5px;
     font-size: 16px;
     list-style: none;
     border: 1px solid;
     border-radius: 10px;
-    background-color:rgb(121 123 162 / 33%);
+    background-color: rgb(121 123 162 / 33%);
     margin: 2px;
+    font-size: 10px;
+    width: 51px;
 }
 .description{
     text-transform: capitalize;
-    width: 5rem;
-    font-size: 10px;
     font-family: system-ui;
 }
 .left-top{
@@ -53,7 +58,7 @@
     margin: 10%;
 } 
 .temp{
-    font-size: 6rem;
+    font-size: 3rem;
 }
 .invert-logo{
     filter: invert(1) brightness(1);
@@ -62,12 +67,12 @@
     display: flex;
 }
 .day{
-    font-size: 3rem;
+    font-size: 40px;
     margin-bottom: 1rem;
 }
 .images{
-    width: 70px;
-    height: 70px;
+    width: 40px;
+    height: 40px;
 }
 .currentDayLogo{
     margin: 1rem;
@@ -84,10 +89,8 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    height: 100vh;
     width: 100vw;
     justify-content: center;
-    align-items: center;
 }
 
 @keyframes spin {
@@ -100,6 +103,10 @@
     
 } 
  @media screen and (max-width: 1060px) {
+    .container{
+        width: 80%;
+        height: auto;
+    }
     .weekcontainer{
         padding: 5px;
         margin: 3px;
@@ -113,19 +120,15 @@
     }    
   }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 750px) {
     .container{
         display: flex;
         flex-direction: column;
-        height: auto;
+        padding: 0px;
+        width: 100%;
     }
     .loader-container {
-        align-items: center;
-        display: flex;
-        flex-direction: column;
         height: 100vh;
-        width: 100vw;
-        justify-content: center;
     }
     .right-container{
         width: 100%;
@@ -133,6 +136,7 @@
     }
     .left-container{
         width: 100%;
+        background: none;
     }
     .left-bottom{
         margin: 2rem;
